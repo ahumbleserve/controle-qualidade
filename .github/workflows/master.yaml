@@ -1,8 +1,4 @@
 name: pipeline mock
-on: push
 jobs:
-  pipeline01:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        run: echo "Checkout Repo"
+  call-workflow-passing-data:
+    uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
