@@ -1,4 +1,5 @@
 name: pipeline mock
+on: push
 jobs:
   call-workflow-passing-data:
     uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
