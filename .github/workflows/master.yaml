@@ -1,6 +1,16 @@
-name: pipeline mock
-on: push
+name: Compliance
+
+on:
   workflow_call:
+
+permissions:
+  pull-requests: write
+
 jobs:
-  call-workflow-passing-data:
-    uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
+  semantics:
+    name: Semantics
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
+
