@@ -1,0 +1,8 @@
+name: pipeline mock
+on: push
+jobs:
+  pipeline01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: echo "Checkout Repo"
