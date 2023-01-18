@@ -1,8 +1,8 @@
-name: "Compliance"
+name: "Compliancess"
 
 on:
   push:
 
 jobs:
-  compliance:
+  compliancess2:
     uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
