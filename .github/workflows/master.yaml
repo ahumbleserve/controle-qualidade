@@ -1,8 +1,8 @@
-name: Compliance
+name: "Compliance"
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
-  semantics:
+  compliance:
     uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
