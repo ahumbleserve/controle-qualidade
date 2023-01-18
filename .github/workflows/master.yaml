@@ -1,5 +1,6 @@
 name: Compliance
-
+  on:
+    workflow_dispatch:
 jobs:
   semantics:
     name: Semantics
