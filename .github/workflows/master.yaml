@@ -7,4 +7,4 @@ jobs:
   compliancess2:
     uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
     with:
-      configuration-path: ${{ inputs.meu-param-01 }}
+      meu-param-01: teste01
