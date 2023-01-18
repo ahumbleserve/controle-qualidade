@@ -8,8 +8,4 @@ permissions:
 
 jobs:
   semantics:
-    name: Semantics
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
+    uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
