@@ -13,4 +13,6 @@ jobs:
     steps:  
       
       - name: imprime
-        run: echo "nome:"
+        with:
+          names: ${{matrix.nomes}}
+        run: echo "nome: ${{names}}"
