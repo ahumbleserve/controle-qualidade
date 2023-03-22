@@ -11,8 +11,6 @@ jobs:
       matrix: 
         nomes: ['Enzo', 'Luciana', 'Vítor']
     steps:  
-      - uses: ahumbleserve/REST-Todo-API/.github/workflows/master.yaml@master
-        with:
-          meu-param-01: teste01
+      
       - name: imprime
         run: echo "nome:"
