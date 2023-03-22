@@ -6,6 +6,7 @@ on:
 
 jobs:
   compliancess2:
+    runs-on: ubuntu-latest
     strategy:
       matrix: 
         nomes: ['Enzo', 'Luciana', 'Vítor']
