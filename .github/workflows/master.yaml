@@ -3,6 +3,13 @@ name: "Compliance333"
 on:
   push:
   workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        options: 
+        - CRT  
+        - QA        
+        - UAT  
 
 jobs:
   compliancess2:
@@ -13,6 +20,4 @@ jobs:
     steps:  
       
       - name: imprime
-        with:
-          names: ${{matrix.nomes}}
-        run: echo "nome: ${{names}}"
+        run: echo "nome:"
